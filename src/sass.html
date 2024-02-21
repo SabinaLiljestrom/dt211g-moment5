@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.scss">
+    <title>SASS</title>
+    <script src="./js/main.js" type="module"></script>
+</head>
+<header>
+  <a href="index.html">
+      <img src="./images/logga.png" class="logo" alt="logga">
+  </a>
+  <!-- Meny knapp för att öppna mobilmenyn-->
+  <button class="menu-btn open" id="open-menu">
+      <span class="menu-icon">
+          <span class="bars"></span>
+          <span class="bars"></span>
+          <span class="bars"></span>
+      </span>
+      <span class="menu-text">Meny</span>
+  </button>
+  <!-- navigering -->
+  <nav id="nav-menu">
+      <!-- Knapp som visas om mobilmenyn är utfälld -->
+      <button class="menu-btn close" id="close-menu">
+          <span class="menu-icon">
+              <span class="bars cross1"></span>
+              <span class="bars cross2"></span>
+          </span>
+          <span class="menu-text">Stäng</span>
+      </button>
+      <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a id="current" href="sass.html">SASS</a></li>
+          <li><a href="animering.html">Animering</a></li>
+          <li><a href="karta.html">Karta</a></li>
+          <li><a href="diagram.html">Diagram</a></li>
+      </ul>
+  </nav>
+</header>
+<body>
+<div class="container">
+<div class="main">
+    <div class="box1">
+  <h1>SASS utvärdering</h1>  
+  <h2>För- och nackdelar med SASS</h2>
+ <h3>Fördelar</h3>
+ <p>Css-kod blir mer effektivt och lättare att underhålla. Det skapar möjlighet för mer funktionaliteter i koden genom att css-regler går att återanvända, nestla och dela upp i mindre filer. Koden blir också mer strukturerad och läsbar. Utöver det så minskar risken för redudans i koden.</p>
+ <h3>Nackdelar</h3>
+ <p>För någon som inte använt sass så är en nackdel att det är ett nytt verktyg man behöver lära sig hur det fungerar och att syntaxen är lite mer komplex än för CSS. Utöver det så är det en liten fördröjningstid i css-genereringen eller kompileringsprocessen, framförallt om det är en väldigt stor scss-fil. </p>
+  <h2>Att komma igång med att arbeta med SASS</h2>
+  <p>Jag förstår att det ska underlätta arbetet när man använder sass men upplever det svårt att komma igång då det var mycket olika delar som ska göras annorlunda mot innan när man arbetade bara med css. Svårast av allt känner jag att det är att jobba efter 1-7 metoden då det var väldigt svårt att veta vart man ska lägga olika delar av koden. </p>
+</div>
+</div>
+</div>
+</body>
+</html>

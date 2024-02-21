@@ -1,0 +1,27 @@
+
+@mixin images {
+    width: 100%;
+    height: auto;
+}
+
+@mixin button ($color, $bg) {
+    display: flex;
+    color: $color;
+    background: $bg;
+}
+
+.box1 {
+    margin: 2%;
+    padding: 2%;
+}
+
+.box2 {
+    @extend .box1;
+}
+.box3 {
+    @extend .box1;
+}
+.bild {
+    @include images;
+     max-width: 550px;
+   }

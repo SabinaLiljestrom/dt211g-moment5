@@ -1,0 +1,19 @@
+@import "../abstracts/variables";
+
+@keyframes scaleText {
+  from {
+    transform: scale(1, 1);
+}
+to {
+    transform: scale(1.2, 1.2); 
+}
+}
+
+
+@keyframes moveDown {
+   0%   {background-color: $white ; left:0px; top:0px; transform: rotateX(0deg);}
+  25%  {background-color:$primaryHeading; left:250px; top:0px;transform: rotateX(180deg);}
+  50%  {background-color:$primaryColor; left:0px; top:300px; transform: rotate(-110deg);}
+  75%  {background-color:$primary-hover; left:250px; top:0px; transform: rotate(-150deg);}
+  100% {background-color:$primaryHeading; left:0px; top:0px; transform: rotate(-200deg);}
+}

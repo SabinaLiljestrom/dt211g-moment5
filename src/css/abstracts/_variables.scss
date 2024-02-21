@@ -1,0 +1,19 @@
+$font-stack: 'Roboto', sans-serif;
+/*färgschema ljust*/
+$primaryHeading: #4e6db3;
+$primaryText: black;
+$primary-opacity: rgb(219,231,242,.8);
+$primaryColor: #dbe7f2;
+$current: #9fd6e0;
+$primary-hover:#9fd6e0;
+
+ /*färgschema mörkt*/
+$primaryColor-dark: darken($primaryColor, 70%);
+$primaryHeading-dark:lighten($primaryHeading, 20%);
+$grey-dark-opacity: rgb(33,53,74, 0.8);
+$white:#ffffff;
+
+h1, h2, h3 {
+  font-family: 'Permanent Marker';
+  color: $primaryHeading;
+}

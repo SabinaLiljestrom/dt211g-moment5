@@ -1,0 +1,26 @@
+@media (prefers-color-scheme:dark){
+  $dark-mode: true;
+    .container {
+        background-image: url('../images/background-dark.png');
+       }
+        body {
+      background-color: $primaryColor-dark !important;
+        }
+        .main {
+          background-color: $grey-dark-opacity !important;
+        }
+        p {
+          color:  $white;
+        }
+        h1, h2, h3 {
+          color: $primaryHeading-dark;
+        }
+        #nav-menu {
+          background-color: $primaryColor-dark;
+        }
+        .bild {
+          @if $dark-mode {
+              border-radius: 50%;
+            }
+      }
+      }

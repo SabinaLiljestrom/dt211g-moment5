@@ -1,0 +1,8 @@
+.btn-test {
+    @include button($primaryHeading, $primaryColor);
+    &:hover {
+        background-color:  $primary-hover;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+    cursor: pointer;
+    }
+}

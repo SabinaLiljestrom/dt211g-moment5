@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.scss">
+    <title>Startsida</title>
+    <script src="./js/main.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./images/logga.png" class="logo" alt="logga">
+        </a>
+        <!-- Meny knapp för att öppna mobilmenyn-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <!-- navigering -->
+        <nav id="nav-menu">
+            <!-- Knapp som visas om mobilmenyn är utfälld -->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <ul>
+                <li><a id="current" href="index.html">Startsida</a></li>
+                <li><a href="sass.html">SASS</a></li>
+                <li><a href="animering.html">Animering</a></li>
+                <li><a href="karta.html">Karta</a></li>
+                <li><a href="diagram.html">Diagram</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="main">
+            <div class="box1">
+            <h1>
+                Frontend-baserad webbutveckling
+            </h1>
+            </div>
+            <div class="box2">
+                <h2>Bilder</h2>
+                    <p>
+                        Två bilder på min hund Eskil bara för att det var tvunget att finnas med bilder.
+                    </p>
+                </div>
+                <div class="box3">
+                    <picture>
+                        <source srcset="./images/eskil-sommar.jpg?as=avif&width=800" type="image/avif" />
+                        <source srcset="./images/eskil-sommar.jpg?as=webp&width=800" type="image/webp" />
+                        <source srcset="./images/eskil-sommar.jpg?width=800" type="image/jpeg" />
+                        <img src="./images/eskil-sommar.jpg?width=200" class="bild" alt="hund" />
+                      </picture>
+                      <picture>
+                        <source srcset="./images/eskil-kalas.jpg?as=avif&width=800" type="image/avif" />
+                        <source srcset="./images/eskil-kalas.jpg?as=webp&width=800" type="image/webp" />
+                        <source srcset="./images/eskil-kalas.jpg?width=800" type="image/jpeg" />
+                        <img src="./images/eskil-kalas.jpg?width=200" class="bild" alt="hund" />
+                      </picture>
+            </div>
+            <p>Här har jag lagt in en knapp bara för att testa mixins</p>
+            <button class="btn-test">Knapp</button> 
+        </div>
+        </div>    
+</body>
+</html>
