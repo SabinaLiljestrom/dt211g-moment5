@@ -1,18 +1,23 @@
 {
-  "name": "dt211g-moment4",
+  "name": "dt211g-moment5",
   "version": "1.0.0",
-  "description": "Uppgiften är en del av kursen \"Frontend-baserad webbutveckling\".",
+  "description": "Uppgiften är en del av kursen Frontend-baserad webbutveckling",
   "author": "Sabina Liljeström",
   "license": "ISC",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
     "build": "parcel build"
   },
+  "dependencies": {
+    "chart.js": "^4.4.3",
+    "parcel": "^2.11.0"
+  },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.11.0",
-    "parcel": "^2.11.0",
+    "@cubejs-client/core": "^0.31.0",
+    "@parcel/transformer-sass": "^2.12.0",
     "sharp": "^0.31.3"
   }
 }
