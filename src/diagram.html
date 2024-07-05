@@ -5,16 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.scss">
-    <script src="./js/main.js" type="module"></script>
-
     <title>Diagram</title>
+    <script src="./js/main.js" type="module"></script>
 </head>
 <body>
+    <header>
+        <a href="index.html">
+            <img src="./images/logga.png" class="logo" alt="logga">
+        </a>
+        <!-- Meny knapp för att öppna mobilmenyn-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <!-- navigering -->
+        <nav id="nav-menu">
+            <!-- Knapp som visas om mobilmenyn är utfälld -->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="sass.html">SASS</a></li>
+                <li><a id="current" href="animering.html">Animering</a></li>
+                <li><a href="karta.html">Karta</a></li>
+                <li><a href="diagram.html">Diagram</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <div>
+        <div class="chart-container" style="position: relative; height:40vh; width:80vw">
             <canvas id="myChart"></canvas>
         </div>
-        <div>
+        <div class="chart-container" style="position: relative; height:40vh; width:80vw">
             <canvas id="programChart"></canvas>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
